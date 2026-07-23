@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Write a Post | DevVerse</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        DevVerse<span class="nav-logo-dot"></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/add-blog.html" class="active">Add Blog</a></li>
+        <li><a href="/add-blog.html" class="btn-nav-action">Write a Post</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main>
+    <div class="form-card">
+      <div class="form-header">
+        <h2 id="form-header-title">Write a New Article</h2>
+        <p id="form-header-desc">Share your knowledge, code insights, and experiences with the DevVerse community.</p>
+      </div>
+
+      <!-- Add / Edit Blog Form -->
+      <form id="add-blog-form" novalidate>
+        
+        <div class="form-group">
+          <label for="title" class="form-label">Article Title <span class="required-star">*</span></label>
+          <input type="text" id="title" class="form-control" placeholder="e.g. A Deep Dive into async/await" required>
+        </div>
+
+        <div class="form-group">
+          <label for="category" class="form-label">Category <span class="required-star">*</span></label>
+          <input type="text" id="category" class="form-control" placeholder="e.g. Backend, Frontend, DevOps" required>
+        </div>
+
+        <div class="form-group">
+          <label for="author" class="form-label">Author Name <span class="required-star">*</span></label>
+          <input type="text" id="author" class="form-control" placeholder="e.g. Alex Dev" required>
+        </div>
+
+        <div class="form-group">
+          <label for="image-url" class="form-label">Cover Image URL (Optional)</label>
+          <input type="url" id="image-url" class="form-control" placeholder="https://images.unsplash.com/photo-...">
+        </div>
+
+        <div class="form-group">
+          <label for="content" class="form-label">Article Content <span class="required-star">*</span></label>
+          <textarea id="content" class="form-control" placeholder="Write your post here in details..." required></textarea>
+        </div>
+
+        <button type="submit" id="submit-btn" class="btn-submit">Publish Article</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/add-blog.html">Add Blog</a>
+        <a href="https://github.com/Shergin-07/fullstack-internship" target="_blank">GitHub</a>
+      </div>
+      <p class="footer-text">&copy; 2026 DevVerse. Handcrafted by <span class="footer-accent-text">Shergin-07</span>. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Add Blog Handler Script -->
+  <script src="/add-blog.js"></script>
+</body>
+</html>
+
